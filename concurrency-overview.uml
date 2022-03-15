@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ca.nl.cna.java2.concurrency</OriginalElement>
+  <nodes>
+    <node x="228.0" y="149.0">ca.nl.cna.java2.concurrency.ThreadExample2Test</node>
+    <node x="0.0" y="496.0">ca.nl.cna.java2.concurrency.Synchronized</node>
+    <node x="190.0" y="281.5">ca.nl.cna.java2.concurrency.SpecialThread</node>
+    <node x="22.5" y="171.0">ca.nl.cna.java2.concurrency.TaskExecutor</node>
+    <node x="393.0" y="496.0">ca.nl.cna.java2.concurrency.SingleThread</node>
+    <node x="234.0" y="0.0">ca.nl.cna.java2.concurrency.ThreadExample2</node>
+    <node x="108.0" y="397.0">ca.nl.cna.java2.concurrency.MultiThread</node>
+    <node x="185.0" y="496.0">ca.nl.cna.java2.concurrency.ThreadExample1</node>
+    <node x="381.0" y="270.0">ca.nl.cna.java2.concurrency.Unsynchronized</node>
+    <node x="0.0" y="0.0">ca.nl.cna.java2.concurrency.PrintTask</node>
+    <node x="0.0" y="270.0">ca.nl.cna.java2.concurrency.BackgroundTask</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ca.nl.cna.java2.concurrency.TaskExecutor" target="ca.nl.cna.java2.concurrency.PrintTask" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="ca.nl.cna.java2.concurrency.MultiThread" target="ca.nl.cna.java2.concurrency.SpecialThread" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="174.0" y="372.0" />
+      <point x="263.0" y="372.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ca.nl.cna.java2.concurrency.MultiThread" target="ca.nl.cna.java2.concurrency.BackgroundTask" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="174.0" y="372.0" />
+      <point x="85.0" y="372.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ca.nl.cna.java2.concurrency.ThreadExample2Test" target="ca.nl.cna.java2.concurrency.ThreadExample2" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="268.5" y="319.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
