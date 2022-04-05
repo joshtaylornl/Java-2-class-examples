@@ -6,7 +6,7 @@ public class KnockKnockClient {
     public static void main(String[] args) throws IOException {
 
         String hostName = "localhost";
-        int portNumber = 4400;
+        int portNumber = 4401;
 
         try (
                 Socket kkSocket = new Socket(hostName, portNumber);
