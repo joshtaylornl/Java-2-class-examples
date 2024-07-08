@@ -7,7 +7,7 @@ public class SpecialThread extends Thread {
 
     @Override
     public void run() {
-        super.run();
+        super.run();        //This should do nothing - right?!
         Thread thread = Thread.currentThread();
         //Get the currently running thread object
         System.out.println(thread.getName()+"Running");

@@ -9,7 +9,7 @@ public class TaskExecutor {
         // create ExecutorService to manage threads
         ExecutorService executorService = Executors.newCachedThreadPool();
 
-        for (int i = 0; i < 999; i++) {
+        for (int i = 0; i < 9; i++) {
             executorService.execute(new PrintTask("task" + String.valueOf(i+1))); // start task1
         }
 

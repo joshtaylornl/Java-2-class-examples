@@ -11,7 +11,7 @@ public class PrintTask implements Runnable {
     public PrintTask(String taskName) {
         this.taskName = taskName;
 
-        // pick random sleep time between 0 and 5 seconds
+        // pick random sleep time between 0 and 15 seconds
         sleepTime = generator.nextInt(15000); // milliseconds
     }
 
@@ -20,8 +20,8 @@ public class PrintTask implements Runnable {
     public void run() {
         try { // put thread to sleep for sleepTime amount of time
             System.out.printf("%s going to sleep for %d milliseconds.%n",
-                    taskName, 1000);
-            Thread.sleep(1000); //TODO is this referencing the thread you think it is?
+                    taskName, sleepTime);
+            Thread.sleep(sleepTime); //TODO is this referencing the thread you think it is?
         }
         catch (InterruptedException exception) {
             exception.printStackTrace();

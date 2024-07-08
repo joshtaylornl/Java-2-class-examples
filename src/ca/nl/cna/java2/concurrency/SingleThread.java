@@ -8,6 +8,7 @@ package ca.nl.cna.java2.concurrency;
 public class SingleThread {
     public static void main(String[] args){
         Thread thread = Thread.currentThread();
+
         //Get the currently running thread object
         thread.setName("Single thread"); //Thread renaming
         System.out.println(thread.getName()+"Running");

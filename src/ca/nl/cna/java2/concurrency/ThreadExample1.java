@@ -10,6 +10,7 @@ public class ThreadExample1 implements Runnable {
     public void run() {
     }
 
+    //In practice this main class would be separate
     public static void main(String[] args) {
         Thread thread1 = new Thread();
         thread1.setPriority(Thread.MIN_PRIORITY);

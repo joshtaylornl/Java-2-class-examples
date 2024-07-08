@@ -12,6 +12,7 @@ public class ThreadExample2 implements Runnable {
     ThreadExample2(String name) {
         tname = name;
     }
+
     @Override
     public void run() {
         System.out.println("Thread running: " + tname);

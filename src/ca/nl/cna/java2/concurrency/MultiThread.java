@@ -13,6 +13,8 @@ public class MultiThread{
         Thread myThread1 = new Thread(new BackgroundTask(1000),"MyTestThread1");
         Thread myThread2 = new Thread(new SpecialThread(),"MySpecialThread");
 
+        System.out.printf("\nIs Daemon: %s\n",myThread1.isDaemon());
+
         myThread1.start();
         myThread2.start();
 
