@@ -20,15 +20,17 @@ public class EchoClient {
         int portNumber = 8800;
 
         try (
+                //Set up the Socket - point it to the server
                 Socket echoSocket = new Socket(hostName, portNumber);
+                //Set up a PrintWrite to the Socket
                 PrintWriter out =
                         new PrintWriter(echoSocket.getOutputStream(), true);
-                BufferedReader in =
-                        new BufferedReader(
-                                new InputStreamReader(echoSocket.getInputStream()));
-                BufferedReader stdIn =
-                        new BufferedReader(
-                                new InputStreamReader(System.in))
+                //Set up a BufferedReader to read from the socket
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(echoSocket.getInputStream()));
+                //Set up a BufferedReader to read from the console (input from the user on the client side)
+                BufferedReader stdIn = new BufferedReader(
+                        new InputStreamReader(System.in))
         ) {
             String userInput;
             while ((userInput = stdIn.readLine()) != null) {
@@ -39,6 +41,7 @@ public class EchoClient {
             System.err.println("Don't know about host " + hostName);
             System.exit(1);
         } catch (IOException e) {
+            //This will happen if the Server isn't running
             System.err.println("Couldn't get I/O for the connection to " +
                     hostName);
             System.exit(1);

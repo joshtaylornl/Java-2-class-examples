@@ -6,7 +6,7 @@ import java.io.*;
 public class KKMultiServer {
     public static void main(String[] args) throws IOException {
 
-        int portNumber = 4401; //Integer.parseInt(args[0]);
+        int portNumber = 4400; //Integer.parseInt(args[0]);
         boolean listening = true;
 
         try (ServerSocket serverSocket = new ServerSocket(portNumber)) {

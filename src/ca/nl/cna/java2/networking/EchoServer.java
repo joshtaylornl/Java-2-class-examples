@@ -15,16 +15,22 @@ public class EchoServer {
         int portNumber = 8800;
 
         try (
+                //Set up a ServerSocket on a port to accept connections from clients
                 ServerSocket serverSocket = new ServerSocket(portNumber);
+                //Set up client Socket to be able to communicate with the client
                 Socket clientSocket = serverSocket.accept();
+                //Set up a PrintWriter to the client Socket
                 PrintWriter out =
                         new PrintWriter(clientSocket.getOutputStream(), true);
+                //Set up a BufferedReader to read incoming from the client Socket
                 BufferedReader in = new BufferedReader(
                         new InputStreamReader(clientSocket.getInputStream()));
         ) {
             String inputLine;
+            //Loop when connected until the input is null or program is terminated
             while ((inputLine = in.readLine()) != null) {
                 out.println(inputLine);
+                System.out.println(inputLine);
             }
         } catch (IOException e) {
             System.out.println("Exception caught when trying to listen on port "
