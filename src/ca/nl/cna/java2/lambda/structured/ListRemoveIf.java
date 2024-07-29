@@ -18,6 +18,8 @@ public class ListRemoveIf {
         words.add("sun");
         words.add("silk");
 
+
+
         Predicate<String> hasThreeChars = word -> word.length() == 3;
         words.removeIf(hasThreeChars);
 

@@ -4,9 +4,9 @@
  * Some of this code has been borrowed or adapted from Dietel java course notes
  *
  * When to use a Lambda?
- *  - Often used with Collections
+ *  - Anonymous Objects - Often used with Collections
  *  - Event handling (AWT / Swing / Java FX) which are all less important
- *  - Any time you need a quick functional interface
+ *  - Any time you need a quick functional interface - Also used with Collections
  *
  * Note: explore the package java.util.function which provide target types for lambda expressions
  *

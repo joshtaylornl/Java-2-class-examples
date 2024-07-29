@@ -5,12 +5,12 @@ package ca.nl.cna.java2.lambda;
  *
  * @author Josh
  */
-public class TestApplication {
+public class FunWithFunctionalityInterface {
 
     public static void main(String[] args) {
-        System.out.println("Test main...");
+        System.out.println("In Fun With Functionality Interface...");
 
-        //Old skool approach
+        //Old skool approach using an Anonymous Class
         Functionality oldSkool = new Functionality() {
             @Override
             public void doSomething() {
